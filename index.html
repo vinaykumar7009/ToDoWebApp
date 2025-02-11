@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Todo List</title>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2YD7ED6380"></script>
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-2YD7ED6380"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -22,6 +22,56 @@
       <ul class="todos" id="todos"></ul>
     </form>
     <small>Left click to toggle completed. <br> Right click to delete todo</small>
+    <script src="script.js"></script>
+  </body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple and efficient Todo List app to help you manage tasks and stay organized." />
+    <meta name="keywords" content="Todo List, Task Manager, Productivity, To-do App, Organize Tasks" />
+    <meta name="author" content="Vinay Kumar" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Todo List App | Manage Your Tasks Efficiently</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Todo List App | Manage Your Tasks Efficiently" />
+    <meta property="og:description" content="Stay organized and boost productivity with our easy-to-use Todo List app." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vinaykumar7009.github.io/ToDoWebApp/" />
+    <meta property="og:image" content="https://vinaykumar7009.github.io/ToDoWebApp/og-image.jpg" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Todo List App | Manage Your Tasks Efficiently" />
+    <meta name="twitter:description" content="Stay organized and boost productivity with our easy-to-use Todo List app." />
+    <meta name="twitter:image" content="https://vinaykumar7009.github.io/ToDoWebApp/twitter-image.jpg" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YD7ED6380"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2YD7ED6380');
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Todo List App</h1>
+      <p>Manage your daily tasks efficiently and stay organized with our simple Todo List app.</p>
+    </header>
+    <main>
+      <form id="form" aria-label="Add new todo">
+        <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off" aria-label="Todo input">
+        <button type="submit" aria-label="Add todo">Add</button>
+      </form>
+      <ul class="todos" id="todos" aria-label="Todo list"></ul>
+    </main>
+    <footer>
+      <small>Left click to toggle completed. Right click to delete todo.</small>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
